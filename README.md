@@ -43,7 +43,7 @@ var RCTBattery = React.createClass({
   componentWillUnmount: function(){
     this._subscription.remove();
   },
-
+  
   render: function() {
     var chargingText;
     if(this.state.charging){

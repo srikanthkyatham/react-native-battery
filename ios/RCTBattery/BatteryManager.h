@@ -6,10 +6,10 @@
 //  Created by Olajide Ogundipe Jr on 9/15/15.
 
 
-#import "RCTBridgeModule.h"
+#import <React/RCTBridgeModule.h>
+#import <React/RCTEventEmitter.h>
 
-
-@interface BatteryManager : NSObject <RCTBridgeModule>
+@interface BatteryManager : RCTEventEmitter <RCTBridgeModule>
 @property (nonatomic) bool isPlugged;
 
 @end
